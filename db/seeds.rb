@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-inventory_1 = Inventory.create{name: 'Test', description: 'this is a thing', quantity: 7, price: 5.50}
+item_1 = Item.create{name: 'Test', description: 'this is a thing', quantity: 7, price: 5.50}
