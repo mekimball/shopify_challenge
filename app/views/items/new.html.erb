@@ -1,0 +1,18 @@
+<h1>Create New Item</h1>
+</br>
+
+<%= form_with model: @item, url: items_path, method: :post, local: true do |form| %>
+  <p><%= form.label :name, 'Name' %>
+  <%= form.text_field :name %></p>
+
+  <p><%= form.label :description, 'Description' %>
+  <%= form.text_field :description %></p>
+
+  <p><%= form.label :price, 'Price' %>
+  <%= form.text_field :price %></p>
+
+  <p><%= form.label :quantity, 'quantity' %>
+  <%= form.text_field :quantity %></p>
+
+  <%= form.submit 'Create Item' %>
+<% end %>
